@@ -1,0 +1,161 @@
+
+.hero{
+    min-height: calc(100vh - 80px);
+    display: flex;
+    overflow: hidden;
+}
+
+
+
+.hero-img{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 5;
+}
+
+.hero-img img{
+    width: 120%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+.hero-image__overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+  
+    background-color: var(--primary-color);
+    z-index: -1;
+  }
+
+  
+
+  .hero-img h2{
+    position: absolute;
+    bottom: 0;
+    font-family: var(--playfair-display);
+    font-size: 120px;
+    line-height: 138px;
+    color: white;
+    padding: 20px;
+  }
+
+  .hero-content {
+    flex: 1.22;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .info{
+    padding: 54px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+  .info h1{
+    font-size: 80px;
+    font-weight: 600;
+    font-family: var(--playfair-display);
+    color: var(--secondary-color);
+
+  }
+
+  .info p{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .buttons {
+    margin: 41px 0 0 41px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+  }
+
+  .buttons .order{
+    padding: 20px;
+  border-radius: 36px;
+  min-width: 212px;
+  outline: none;
+  border: none;
+  background: var(--secondary-color);
+
+  cursor: pointer;
+
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  }
+
+
+  .buttons .how{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    color: var(--black-200);
+    font-family: var(--plus-jakarta-sans);
+  
+    cursor: pointer;
+  }
+
+  .buttons .how img{
+    margin-right: 24px;
+  }
+
+
+  @media only screen and (max-width:900px){
+    .hero{
+      flex-direction: column;
+     
+    }
+    .hero-img img{
+      width: 100%;
+      
+      object-fit: contain;
+      
+  }
+  
+  .hero-img h2{
+
+    font-size: 50px;
+    line-height: 70px;
+    color: white;
+    padding: 20px;
+  }
+  .info{
+    padding: 30px;
+   
+    
+  }
+  .info h1{
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+  .buttons {
+    margin: 10px 0 0 0px;
+    gap: 12px;
+  }
+
+
+  }
